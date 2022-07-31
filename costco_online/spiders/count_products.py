@@ -31,7 +31,6 @@ class CountProductsSpider(scrapy.Spider):
                 else:
                     # 子カテゴリーが存在しない場合
                     yield scrapy.Request(url=next_page, callback=self.parse_productsList)
-        pass
 
     def parse_child(self, response):
         """カテゴリー別ページ解析処理

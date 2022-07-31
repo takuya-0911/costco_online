@@ -15,6 +15,8 @@ class CostcoOnlineItem(Item):
     """
     category = Field()
     child_category = Field()
+    disp_category = Field()
+    disp_child_category = Field()
     count = Field()
     pass
 
